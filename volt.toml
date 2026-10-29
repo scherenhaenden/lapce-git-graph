@@ -1,0 +1,15 @@
+name = "git-graph"
+version = "0.1.0"
+display-name = "Git Graph"
+author = "scherenhaenden"
+description = "View a Git Graph of your repository directly in Lapce"
+wasm = "lapce-git-graph.wasm"
+icon = "icon.svg"
+repository = "https://github.com/scherenhaenden/lapce-git-graph"
+
+[activation]
+workspace-contains = [".git"]
+
+[config."git-graph.port"]
+default = 6428
+description = "Port for the Git Graph local companion server"

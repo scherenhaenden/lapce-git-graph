@@ -1,5 +1,5 @@
 name = "git-graph"
-version = "0.1.0"
+version = "0.1.1"
 display-name = "Git Graph"
 author = "scherenhaenden"
 description = "View a Git Graph of your repository directly in Lapce"
@@ -8,7 +8,7 @@ icon = "icon.svg"
 repository = "https://github.com/scherenhaenden/lapce-git-graph"
 
 [activation]
-workspace-contains = [".git"]
+workspace-contains = ["**/.git", "*/.git", ".git", "*"]
 
 [config."git-graph.port"]
 default = 6428
